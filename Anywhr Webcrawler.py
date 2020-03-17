@@ -135,7 +135,7 @@ print(airport_df)
 
 #Using Google Geocoding API, use the airport names to find lat-long coordinates for those entries that are missing them.
 GEONAMES_API = "https://maps.googleapis.com/"
-GEONAMES_KEY = "AIzaSyAUMCHSVc8IPYt-JK6Gd1omIAJ46xS7KHM"
+GEONAMES_KEY = #INSERT YOUR KEY HERE
 #Call the API using the airport name as the search term
 feature_url = "{}maps/api/geocode/json?address={{}}&key={}".format(GEONAMES_API, GEONAMES_KEY)
 #Only do so for those entries without lat-long coordinates
@@ -196,7 +196,7 @@ print(postalcode)
 #This API service is by LocationIQ
 postalcode2 = []
 GEONAMES_API = "https://us1.locationiq.com/"
-GEONAMES_KEY = "fe85a8d87b9418"
+GEONAMES_KEY = #INSERT YOUR KEY HERE
 #Call their API while suppling lat-long, same method as above
 feature_url = "{}v1/reverse.php?key={}&lat={{}}&lon={{}}&format=json".format(GEONAMES_API, GEONAMES_KEY)
 for i, row in airport_df.iterrows():
